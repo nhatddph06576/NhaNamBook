@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="activity.AddBookActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="10dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:theme="@style/Theme.AppCompat.Light">
+
+
+            <TextView
+                android:id="@+id/titleToolbar"
+                style="@style/toolbarCenter"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/add_book" />
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp">
+
+                <EditText
+                    android:id="@+id/edtIDBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/IDbook"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Thể loại: "
+                    android:textSize="12sp" />
+
+                <Spinner
+                    android:id="@+id/spinerBook"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp">
+
+                <EditText
+                    android:id="@+id/edtNameBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/NameBook"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp">
+
+                <EditText
+                    android:id="@+id/edtAuthorB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/authorBook"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp">
+
+                <EditText
+                    android:id="@+id/edtPublishB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/publishB"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp">
+
+                <EditText
+                    android:id="@+id/edtPriceBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/priceB"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp">
+
+                <EditText
+                    android:id="@+id/edtAmountBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:hint="@string/amountB"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/mybutton"
+        android:onClick="Addbook"
+        android:text="LƯU"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

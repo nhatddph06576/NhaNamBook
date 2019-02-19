@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">PhuongNamBook</string>
+    <string name="wellcome">Phương Nam Book</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_uname">Tài khoản</string>
+    <string name="prompt_password">Mật khẩu</string>
+    <string name="sgc_password">Nhập lại mật khẩu</string>
+    <string name="action_sign_in">Đăng nhập</string>
+    <string name="action_sign_up">Đăng ký</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="titelUname">Tài khoản</string>
+    <string name="titelPw">Mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="noti_error_login">Sai tên tài khoản hoặc mật khẩu</string>
+    <string name="home_title">Danh mục</string>
+    <string name="home_menu_setting">Cài đặt</string>
+    <string name="home_menu_about">Giới thiệu</string>
+    <string name="home_menu_support"><![CDATA[Hỗ trợ & phản hồi]]></string>
+    <string name="user_title">Người dùng</string>
+    <string name="user_menu_add">Thêm người dùng</string>
+    <string name="user_menu_changepw">Đổi mật khẩu</string>
+    <string name="user_menu_logout">Đăng xuất</string>
+    <string name="add">TẠO</string>
+    <string name="user_add_title">Thêm tài khoản</string>
+    <string name="sgUname">Tên đăng nhập</string>
+    <string name="sg_phone">Số điện thoại</string>
+    <string name="sgc_fullName">Họ và tên</string>
+    <string name="user_change_pw">Đổi mật khẩu</string>
+    <string name="user_password_new">Mật khẩu mới</string>
+    <string name="action_save_change">Lưu thay đổi</string>
+    <string name="addType">THÊM</string>
+    <string name="user_typebook">Thể loại</string>
+    <string name="addTypeBook">Thêm thể loại</string>
+    <string name="save_typebook">Thêm mới</string>
+    <string name="IDtypebook">Mã thể loại</string>
+    <string name="Nametypeb">Tên thể loại</string>
+    <string name="LocationType">Vị trí</string>
+    <string name="InfoTypebook">Miêu tả sách</string>
+    <string name="noti_notnull_login">Không được để trống!!</string>
+    <string name="book_title">Sách</string>
+    <string name="add_book">Thêm sách</string>
+    <string name="IDbook">Mã sách</string>
+    <string name="NameBook">Tên sách</string>
+    <string name="authorBook">Tác giả</string>
+    <string name="publishB">Nhà xuất bản</string>
+    <string name="priceB">Giá bán</string>
+    <string name="amountB">Số lượng</string>
+    <string name="bill_title">Hóa đơn</string>
+    <string name="addBill">TIẾP</string>
+    <string name="bill_add">Thêm hóa đơn</string>
+    <string name="choose_date">CHỌN</string>
+    <string name="idBill">Mã hóa đơn</string>
+    <string name="billDate">Ngày mua sách</string>
+    <string name="billInfo_title">Hóa đơn chi tiết</string>
+    <string name="addBillInfo">XONG</string>
+    <string name="sell_title">Sách bán chạy</string>
+    <string name="revenue_title">Thống kê</string>
+    <string name="revenue">Doanh thu</string>
+    <string name="user_edit_info">Chi tiết người dùng</string>
+    <string name="editTypeBook">Chi tiết thể loại</string>
+    <string name="edit_typebook">Sửa</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#fafafa</item>
+        <item name="colorPrimaryDark">#fafafa</item>
+        <item name="colorAccent">#20D0C2</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+<!--FFCA4F-->
+    <style name="Floating">
+    <!-- Customize your theme here. -->
+
+        <item name="colorAccent">#FFCA4F</item>
+
+    </style>
+
+    <style name="toolbarCenter" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+
+    </style>
+
+
+    <style name="icHome">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+
+
+</resources>

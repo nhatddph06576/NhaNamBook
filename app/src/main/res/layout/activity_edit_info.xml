@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activity.EditInfoUserActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:theme="@style/Theme.AppCompat.Light">
+
+
+            <TextView
+                android:id="@+id/titleToolbar"
+                style="@style/toolbarCenter"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/user_title" />
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/user_edit_info"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sg_phone"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <EditText
+                android:id="@+id/edtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sgc_fullName"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/mybutton"
+        android:onClick="btEdit"
+        android:text="Sửa thông tin"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

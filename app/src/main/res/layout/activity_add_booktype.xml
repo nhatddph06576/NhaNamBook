@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activity.AddBooktypeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:theme="@style/Theme.AppCompat.Light">
+
+
+            <TextView
+                android:id="@+id/titleToolbar"
+                style="@style/toolbarCenter"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/user_typebook" />
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/booktype" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/addTypeBook"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <EditText
+                android:id="@+id/edtIDType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/IDtypebook"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+
+                android:maxLines="1"
+                android:singleLine="true" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <EditText
+                android:id="@+id/edtNameType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Nametypeb"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <EditText
+                android:id="@+id/edtLocationType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/LocationType"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <EditText
+                android:id="@+id/edtInfoTypebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/InfoTypebook"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:onClick="addtypebook"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/save_typebook"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
